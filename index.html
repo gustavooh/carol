@@ -4,7 +4,7 @@
         <title>Cara de Cavala</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="Css/editor.css" rel="stylesheet" type="text/css"/>
+        
         <script>
             alert("Cuidado com o susto, se está avisada aperte ''OK''");
         </script>
@@ -17,6 +17,7 @@ background-repeat: repeat-x;
 background-position: 0 bottom;
 }
 ul{
+	height:auto;
     padding:0px;
     margin:0px;
     background-color:darkcyan;
@@ -42,20 +43,171 @@ h1{
     color: white;
     font-size: 3em;
 }
+
+#foto{
+	margin-left: 8.34%;
+}
+
+* {
+    box-sizing: border-box
+}
+            
+body{
+    margin:0;
+}
+
+[class^="col-"] {
+    float:left;
+    padding:10px;
+    border:1px solid black;
+}
+
+@media screen and (max-width: 400px){
+        .col-dp-1{
+            width: 8.33%;
+        }
+        .col-dp-2{
+            width: 16.66%;
+        }
+        .col-dp-3{
+            width: 25%;
+        }.col-dp-4{
+            width: 33.33%;
+        }
+        .col-dp-5{
+            width: 41.66%;
+        }
+        .col-dp-6{
+            width: 50%;
+        }
+        .col-dp-7{
+            width: 58.33%;
+        }
+        .col-dp-8{
+            width: 66.65%;
+        }
+        .col-dp-9{
+            width: 74.99%;
+        }
+        .col-dp-10{
+            width: 83.32%;
+        }
+        .col-dp-11{
+            width: 91.65%;
+        }
+        .col-dp-12{
+            width: 100%;
+        }
+        
+}
+
+
+@media screen and (min-width: 401px) and (max-width:1000px) {
+        .col-dm-1{
+            width: 8.33%;
+        }
+        .col-dm-2{
+            width: 16.66%;
+        }
+        .col-dm-3{
+            width: 25%;
+        }.col-dm-4{
+            width: 33.33%;
+        }
+        .col-dm-5{
+            width: 41.66%;
+        }
+        .col-dm-6{
+            width: 50%;
+        }
+        .col-dm-7{
+            width: 58.33%;
+        }
+        .col-dm-8{
+            width: 66.65%;
+        }
+        .col-dm-9{
+            width: 74.99%;
+        }
+        .col-dm-10{
+            width: 83.32%;
+        }
+        .col-dm-11{
+            width: 91.65%;
+        }
+        .col-dm-12{
+            width: 100%;
+        }
+       
+}
+
+
+@media screen and (min-width: 1001px){
+        .col-dg-1{
+            width: 8.33%;
+        }
+        .col-dg-2{
+            width: 16.66%;
+        }
+        .col-dg-3{
+            width: 25%;
+        }.col-dg-4{
+            width: 33.33%;
+        }
+        .col-dg-5{
+            width: 41.66%;
+        }
+        .col-dg-6{
+            width: 50%;
+        }
+        .col-dg-7{
+            width: 58.33%;
+        }
+        .col-dg-8{
+            width: 66.65%;
+        }
+        .col-dg-9{
+            width: 74.99%;
+        }
+        .col-dg-10{
+            width: 83.32%;
+        }
+        .col-dg-11{
+            width: 91.65%;
+        }
+        .col-dg-12{
+            width: 100%;
+        }
+        
+        
+}
+
+.linha:after {
+    content:"";
+    display:block;
+    clear:both;
+}
+.container {
+    margin:0px 20px;
+}
+.container-fluid {
+    margin:0px;
+}
+
 		</style>
     </head>
     <body>
         <br>
         <ul>
-            <li><a href="#">Onde ela estuda?</a></li>
-            <li><a href="#">Meio de Contato</a></li>
-            <li><a href="#">Horários disponíveis</a></li>
-            <li><a href="#">Veja algumas foto dela</a></li>
+            <li><a href="#" class="col-dg-3 col-dm-3 col-dp-12">Onde ela estuda?</a></li>
+            <li><a href="#" class="col-dg-3 col-dm-3 col-dp-12">Meio de Contato</a></li>
+            <li><a href="#" class="col-dg-3 col-dm-3 col-dp-12">Horários disponíveis</a></li>
+            <li><a href="#" class="col-dg-3 col-dm-3 col-dp-12">Veja algumas foto dela</a></li>
         </ul>
     <center>
-        <h1>A famosa Cara de Cavala</h1>
-        <img src="imagens\Carol.jpg">
-        <marquee> KKK </marquee>
+        <h1 class="col-dg-12 col-dm-12 col-dp-12">A famosa Cara de Cavala</h1>
+        <img id="foto" class="col-dg-10 col-dm-10 col-dp-10" src="imagens\Carol.jpg">
+        
     </center>
     </body>
 </html>
